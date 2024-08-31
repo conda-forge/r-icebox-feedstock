@@ -1,6 +1,5 @@
 {% set version = '1.1.5' %}
 {% set posix = 'm2-' if win else '' %}
-{% set native = 'm2w64-' if win else '' %}
 
 package:
   name: r-icebox
@@ -13,8 +12,7 @@ source:
   sha256: ea4769e34a815ebe231e30575e6817cbc33fa421c32c798b32192e0c5a5b3f23
 
 build:
-  merge_build_host: True  # [win]
-  number: 0
+  number: 1
   noarch: generic
   rpaths:
     - lib/R/lib/
