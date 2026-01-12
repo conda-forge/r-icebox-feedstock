@@ -35,13 +35,18 @@ requirements:
     - {{ posix }}coreutils         # [win]
     - {{ posix }}zip               # [win]
     - cross-r-base {{ r_base }}    # [build_platform != target_platform]
+    - llvm-openmp                  # [osx]
   host:
+    - libgomp                      # [win or linux]
+    - llvm-openmp                  # [osx]
     - r-base
     - r-rcpp
     - r-checkmate
     - r-data.table
     - r-ggplot2
   run:
+    - libgomp                      # [win]
+    - llvm-openmp                  # [osx]
     - r-base
     - r-rcpp
     - r-checkmate
