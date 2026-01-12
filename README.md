@@ -3,9 +3,9 @@ About r-icebox-feedstock
 
 Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/r-icebox-feedstock/blob/main/LICENSE.txt)
 
-Home: https://CRAN.R-project.org/package=ICEbox
+Home: https://github.com/kapelner/ICEbox
 
-Package license: GPL-2.0-only and GPL-3.0-only
+Package license: GPL-2.0-only OR GPL-3.0-only
 
 Summary: Implements Individual Conditional Expectation (ICE) plots, a tool for visualizing the model estimated by any supervised learning algorithm. ICE plots refine Friedman's partial dependence plot by graphing the functional relationship between the predicted response and a covariate of interest for individual observations. Specifically, ICE plots highlight the variation in the fitted values across the range of a covariate of interest, suggesting where and to what extent they may exist.
 
