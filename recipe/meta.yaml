@@ -1,4 +1,4 @@
-{% set version = '1.1.5' %}
+{% set version = "1.2" %}
 {% set posix = 'm2-' if win else '' %}
 
 package:
@@ -9,10 +9,10 @@ source:
   url:
     - {{ cran_mirror }}/src/contrib/ICEbox_{{ version }}.tar.gz
     - {{ cran_mirror }}/src/contrib/Archive/ICEbox/ICEbox_{{ version }}.tar.gz
-  sha256: ea4769e34a815ebe231e30575e6817cbc33fa421c32c798b32192e0c5a5b3f23
+  sha256: df796c6e0a771b96c124e2a5ae841064ebd3a026615e9447d739040cc36555b3
 
 build:
-  number: 2
+  number: 0
   noarch: generic
   rpaths:
     - lib/R/lib/
@@ -37,12 +37,8 @@ test:
 about:
   home: https://CRAN.R-project.org/package=ICEbox
   license: GPL-2.0-only and GPL-3.0-only
-  summary: Implements Individual Conditional Expectation (ICE) plots, a tool for visualizing
-    the model estimated by any supervised learning algorithm. ICE plots refine Friedman's
-    partial dependence plot by graphing the functional relationship between the predicted
-    response and a covariate of interest for individual observations. Specifically,
-    ICE plots highlight the variation in the fitted values across the range of a covariate
-    of interest, suggesting where and to what extent they may exist.
+  summary: Implements Individual Conditional Expectation (ICE) plots, a tool for visualizing the model estimated by any supervised learning algorithm. ICE plots refine Friedman's partial dependence plot by graphing the functional relationship between the predicted response and a covariate of interest for individual observations.
+    Specifically, ICE plots highlight the variation in the fitted values across the range of a covariate of interest, suggesting where and to what extent they may exist.
   license_family: GPL3
   license_file:
     - '{{ environ["PREFIX"] }}/lib/R/share/licenses/GPL-2'
